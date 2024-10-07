@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!--Style Interno-->
+    <link rel="stylesheet" href="utils/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>La Tienda de Productos</h1>
+        </div>
+        <div class="container-fluid title-main grid">
+            <div class="container busqueda g-col-4">
+                <div class="g-col-sm-2 seleccionDiv  ">
+                    <select name="inputMin" id="inputMin" class="select form-select m-4 " title=" Precio mínimo">
+                        <option value="0">Precio mínimo</option>
+                        <option value="10">10 €</option>
+                        <option value="30">30 €</option>
+                        <option value="50">50 €</option>
+                        <option value="100">100 €</option>
+                        <option value="500">500 €</option>
+                    </select>
+                </div>
+                <div class="g-col-sm-2 seleccionDiv">
+                    <select name="inputCateg" id="inputCateg" class="select form-select m-4" title=" Categoria">
+                        <option value="Categoria">Categoria</option>
+                    </select>
+                </div>
+                <div class="g-col-sm-2 seleccionDiv">
+                    <select name="inputMarca" id="inputMarca" class="select form-select m-4" title=" Marca">
+                        <option value="Marca">Marca</option>
+                    </select>
+                </div>
+                <input type="button" class="btn btn-primary m-4" id="btnFiltrar" value="Filtrar">
+
+
+            </div>
+            <div class="g-col-4">
+                <img src="./images/logo.jpg" alt="logo" class="image">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid row">
+            <div class="col-8 row shopView" id="shopView">
+            </div>
+            <div class="col-4 shoppingCart">
+                <ul class="shoppingCartLista" id="shoppingCart">
+                    <li class="listacompra totalCompra animate__animated animate__backInRight">
+                        <strong>Cesta de la Compra </strong>
+                    </li>
+                </ul>
+                <ul class="totalPrice" id="totalPrice"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            Tienda de Productos since 2024 by Juan José Ávila <sup>&#169;</sup>
+        </div>
+    </footer>
+    <!--SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!--JS interno-->
+    <script src="utils/js/producto.js"></script>
+    <script src="utils/js/tienda.js"></script>
+</body>
+
+</html>
